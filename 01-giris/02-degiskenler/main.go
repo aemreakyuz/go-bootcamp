@@ -39,21 +39,21 @@ func main() {
 		var3 = 5
 	*/
 
-	var fullName string = "Emre Akyüz"
-	fullName += " / Coder"
-	fmt.Println(fullName)
+	// var fullName string = "Emre Akyüz"
+	// fullName += " / Coder"
+	// fmt.Println(fullName)
 
-	fmt.Printf("%v \n", a)
-	fmt.Printf("%v \n", b)
-	fmt.Printf("%v \n", c)
-	fmt.Printf("%v \n", d)
+	// fmt.Printf("%v \n", a)
+	// fmt.Printf("%v \n", b)
+	// fmt.Printf("%v \n", c)
+	// fmt.Printf("%v \n", d)
 
 	/*
 		int, uint, byte, rune
 	*/
 
-	var var3 uint8 = 255 // 0-255 arası(dahil) veri alır
-	var var4 byte = 255  // uint8 ile aynı. Yani bir alias dır
+	//var var3 uint8 = 255 // 0-255 arası(dahil) veri alır
+	//var var4 byte = 255  // uint8 ile aynı. Yani bir alias dır
 
 	//uint16, uint32, uint64 şeklinde kullanımlar mümkün
 
@@ -66,57 +66,57 @@ func main() {
 	*/
 
 	//ek olarak rune tipi vardır. bu da int32 için bir alias dır
-	var runeType rune = 445
+	//var runeType rune = 445
 
 	//var keyword u ve veri tipi kullanmadan değişken tanımlamak mümkündür
 	// bunun için := kullanılmalı
 	//bu kullanımda veri tipi belirtilmesine gerek yok, otomatik olarak veriye göre kendi tipine atayacaktır
-	var6 := 4
+	//var6 := 4
 	//var var7 int32:= // bu kullanım hatalıdır, var var ise := kullanılmaz
 
 	// var initialize
-	var message = "Hello World!"
-	var a, b, c int = 1, 2, 3
+	//var message = "Hello World!"
+	//var a, b, c int = 1, 2, 3
 
 	// infer type
-	var message = "Hello World!"
-	var a, b, c int = 1, 2, 3
-	fmt.Println(message, a, b, c)
+	//var message = "Hello World!"
+	//var a, b, c int = 1, 2, 3
+	//fmt.Println(message, a, b, c)
 
 	//mixed
-	var message = "Hello World!"
-	var a, b, c = 1, false, 3
+	//var message = "Hello World!"
+	//var a, b, c = 1, false, 3
 
 	//var zero-value
-	var a int
-	var b string
-	var c float64
-	var d bool
+	// var a int
+	// var b string
+	// var c float64
+	// var d bool
 
 	//örtülü (implicit) ya da belirgin (explicit) ilklendirme(initialization)
-	var c int
-	var k, o string = "foo", "bar" //multiple assignment
+	//var c int
+	//var k, o string = "foo", "bar" //multiple assignment
 
-	var p = 42             //int
-	var s, b = "foo", true //string, bool
+	//var p = 42             //int
+	//var s, b = "foo", true //string, bool
 
 	/*
-		Kısaltılmış değişken bildirimleri(sadece fonksiyonların )
+		Kısaltılmış değişken bildirimleri(sadece fonksiyonların içinde )
 	*/
 
 	u := 42
-	v, n := "foo", true
+	//v, n := "foo", true
 	//you can only do this inside a func
-	message := "hello"
+	//message := "hello"
 	a, b, c := 1, false, 3
 	d := 4
 	e := true
 
-	a := 10
-	b := "golang"
-	c := 4.17
-	d := true
-	e := "merhaba"
+	//a := 10
+	//b := "golang"
+	//c := 4.17
+	//d := true
+	//e := "merhaba"
 	f := `golang` //work like double-quotes
 	g := `M`
 
@@ -146,6 +146,6 @@ func main() {
 	println(imag(myComplex))
 
 	//adresini almak mümkün
-	return &u
+	fmt.Println(&u) // u'nun adresini yazdır (bellekte gösterdiği yer)
 
 }
